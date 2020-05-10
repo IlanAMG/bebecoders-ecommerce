@@ -28,6 +28,9 @@ const IndexPage = ({ data }) => {
                     data-item-image={product.image.url}
                     data-item-name={product.name}
                     data-item-url='/' //important, s'il y a une page par produit il faut mettre le slug
+
+                    data-item-payment-interval={product.sub ? 'Month' : null} //  à rajouter pour gérer les abonnements
+                    data-item-payment-interval-count={product.sub ? '1' : null} // à rajouter pour gérer les abonnements
                   >Ajouter au panier</a>
                 </article>
               )
@@ -47,6 +50,7 @@ export const query = graphql`
           node {
             id
             name
+            sub
             price
             image {
               url
