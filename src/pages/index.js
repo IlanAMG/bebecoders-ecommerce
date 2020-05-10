@@ -31,6 +31,7 @@ const IndexPage = ({ data }) => {
 
                     data-item-payment-interval={product.sub ? 'Month' : null} //  à rajouter pour gérer les abonnements
                     data-item-payment-interval-count={product.sub ? '1' : null} // à rajouter pour gérer les abonnements
+                    // voir la doc pour d'autres paramètre tel quel changer la couleur, la taille etc
                   >Ajouter au panier</a>
                 </article>
               )

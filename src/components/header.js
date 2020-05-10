@@ -27,6 +27,14 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+      <button class='snipcart-checkout'>
+        <div>
+          🛒 : <span className='snipcart-items-count' />
+        </div>
+        <div>
+          Prix : <span className='snipcart-total-price' />
+        </div>
+      </button>
     </div>
   </header>
 )
