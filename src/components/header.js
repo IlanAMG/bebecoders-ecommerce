@@ -27,6 +27,12 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+      <Link to='/'>
+        accueil
+      </Link>
+      <Link to='/404'>
+        404
+      </Link>
       <button class='snipcart-checkout'>
         <div>
           🛒 : <span className='snipcart-items-count' />
